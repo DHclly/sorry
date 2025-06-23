@@ -76,6 +76,7 @@ module Sorry
 
 		<<-HTML
 		<p><a href="#{$cache.get_url(gif_file)}" target="_blank"><p>点击下载</p></a></p>
+		<p><img src="#{$cache.get_url(gif_file)}" style="width:300px;height:200px;"/></p>
 		HTML
 	end
 
