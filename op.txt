@@ -1,13 +1,14 @@
 
 
-cd ./app
-docker build -t dhclly/sorry:v2.0 -f .\Dockerfile2.yml .
-
 docker build -t sorry ./app
 docker run --rm -it -p 4567:4567 sorry
 
+cd ./app
+docker build -t dhclly/sorry:v2.0 -f .\Dockerfile2.yml .
 
 
 docker run -d -p 4567:4567 --name sorry01 dhclly/sorry:v2.0
+
+docker run -d -p 4567:4567 -v D:\\learn\\sorry\\app:/app --name sorry01 dhclly/sorry:v2.0
 
 docker stop sorry01 && docker rm sorry01
