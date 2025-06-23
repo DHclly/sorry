@@ -17,7 +17,7 @@ RUN apt-get install -y \
 
 # 使用国内Gem镜像
 RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
-RUN gem install bundler
+RUN gem install bundler -v 2.3.27
 RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 RUN bundle install
 
