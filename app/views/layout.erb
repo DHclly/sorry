@@ -7,12 +7,21 @@
     <title>Sorry! 在线生成</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/w3.css" />
-    <!-- your code -->
+    <style>
+    .s-sidebar{
+        background-color: #69beff;
+    }
+
+    .s-container{
+        background-color: #d8eeff;
+    }
+    </style>
+
 </head>
 
-<body>
+<body class="s-container">
     <!-- Sidebar -->
-    <div id="sidebar" class="w3-sidebar w3-bar-block w3-border-right" style="display:none">
+    <div id="sidebar" class="w3-sidebar w3-bar-block w3-border-right s-sidebar" style="display:none">
         <button id="sidebar_close" class="w3-bar-item w3-large">&times;</button>
         <a href="/sorry/" class="w3-bar-item w3-button">为所欲为</a>
         <a href="/wangjingze/" class="w3-bar-item w3-button">王境泽</a>
@@ -29,7 +38,7 @@
     </div>
 
     <!-- Main Frame -->
-    <div class="w3-container w3-display-container w3-half" id="container-box">
+    <div class="w3-container w3-display-container w3-half s-container" id="container-box">
         <div class="w3-container">
             <img src="example.png" alt="Lights" style="width:400px;height:200px">
             <h1 class="w3-text-blue">在线生成动图</h1>
