@@ -4,6 +4,7 @@ var sidebar_close_btn = document.getElementById("sidebar_close")
 var sidebar           = document.getElementById("sidebar")
 var result            = document.getElementById("result")
 var wechat_checkbox   = document.getElementById("wechat-checkbox")
+var container_box     = document.getElementById("container-box")
 
 function make_body() {
     var body = {}
@@ -84,10 +85,12 @@ function save_input() {
 
 function sidebar_open() {
     sidebar.style.display = "block";
+    container_box.style.marginLeft="200px";
 }
 
 function sidebar_close() {
     sidebar.style.display = "none";
+    container_box.style.marginLeft="0px";
 }
 
 submit_btn.onclick        = submit;

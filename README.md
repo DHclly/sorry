@@ -164,7 +164,7 @@ crontab -e
 
 # 在每小时的第10分钟 清除700分钟以前的gif
 
-10  *  *   *   *     find /root/sorry/public/cache -name '*.gif' -mmin +700  -exec rm {} \;       
+10  *  *   *   *     find /app/sorry/public/cache -name '*.gif' -mmin +700  -exec rm {} \;       
 ```
 
 ## 添加GIF模板

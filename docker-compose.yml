@@ -2,10 +2,11 @@ version: "3.5"
 
 services:
   sorry:
-    build: app
-    restart: always
+    # build: app
+    # restart: always
+    image: dhclly/sorry:v1.0
     ports:
-      - 127.0.0.1:4567:4567
+      - 4567:4567
     volumes:
       - ./temp:/app/temp
     environment:
