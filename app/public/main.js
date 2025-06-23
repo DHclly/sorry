@@ -6,6 +6,8 @@ var result            = document.getElementById("result")
 var wechat_checkbox   = document.getElementById("wechat-checkbox")
 var container_box     = document.getElementById("container-box")
 
+container_box.style.marginLeft="40px";
+
 function make_body() {
     var body = {}
 
@@ -90,7 +92,7 @@ function sidebar_open() {
 
 function sidebar_close() {
     sidebar.style.display = "none";
-    container_box.style.marginLeft="0px";
+    container_box.style.marginLeft="40px";
 }
 
 submit_btn.onclick        = submit;
